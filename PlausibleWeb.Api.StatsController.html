@@ -4,20 +4,20 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="ExDoc v0.29.4">
+    <meta name="generator" content="ExDoc v0.30.3">
     <meta name="project" content="Plausible v0.0.1">
 
     <title>PlausibleWeb.Api.StatsController — Plausible v0.0.1</title>
-    <link rel="stylesheet" href="dist/html-elixir-HHVY3JYD.css" />
+    <link rel="stylesheet" href="dist/html-elixir-P5GXSCHE.css" />
 
 
     <script src="dist/handlebars.runtime-NWIB6V2M.js"></script>
-    <script src="dist/handlebars.templates-XWGFFSCD.js"></script>
-    <script src="dist/sidebar_items-9B714FE8.js"></script>
+    <script src="dist/handlebars.templates-NBND3S2D.js"></script>
+    <script src="dist/sidebar_items-803524E3.js"></script>
 
       <script src="docs_config.js"></script>
 
-    <script async src="dist/html-JDI3AVDD.js"></script>
+    <script async src="dist/html-CGDDOCMI.js"></script>
 
 
   </head>
@@ -118,9 +118,8 @@ Plausible
     <h1 class="section-heading">
       <a class="hover-link" href="#summary">
         <i class="ri-link-m" aria-hidden="true"></i>
-        <span class="sr-only">Link to this section</span>
+        Summary
       </a>
-      Summary
     </h1>
 <div class="summary-functions summary">
   <h2>
@@ -129,7 +128,7 @@ Plausible
 
     <div class="summary-row">
       <div class="summary-signature">
-        <a href="#all_props_breakdown/2" translate="no">all_props_breakdown(conn, params)</a>
+        <a href="#all_custom_prop_values/2" translate="no">all_custom_prop_values(conn, params)</a>
 
       </div>
 
@@ -185,6 +184,14 @@ Plausible
 
     <div class="summary-row">
       <div class="summary-signature">
+        <a href="#custom_prop_values/2" translate="no">custom_prop_values(conn, params)</a>
+
+      </div>
+
+    </div>
+
+    <div class="summary-row">
+      <div class="summary-signature">
         <a href="#entry_pages/2" translate="no">entry_pages(conn, params)</a>
 
       </div>
@@ -202,6 +209,14 @@ Plausible
     <div class="summary-row">
       <div class="summary-signature">
         <a href="#filter_suggestions/2" translate="no">filter_suggestions(conn, params)</a>
+
+      </div>
+
+    </div>
+
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#funnel/2" translate="no">funnel(conn, params)</a>
 
       </div>
 
@@ -243,7 +258,7 @@ Plausible
 
     <div class="summary-row">
       <div class="summary-signature">
-        <a href="#prop_breakdown/2" translate="no">prop_breakdown(conn, params)</a>
+        <a href="#referrer_drilldown/2" translate="no">referrer_drilldown(conn, params)</a>
 
       </div>
 
@@ -251,7 +266,7 @@ Plausible
 
     <div class="summary-row">
       <div class="summary-signature">
-        <a href="#referrer_drilldown/2" translate="no">referrer_drilldown(conn, params)</a>
+        <a href="#referrers/2" translate="no">referrers(conn, params)</a>
 
       </div>
 
@@ -338,21 +353,20 @@ Plausible
     <h1 class="section-heading">
       <a class="hover-link" href="#functions">
         <i class="ri-link-m" aria-hidden="true"></i>
-        <span class="sr-only">Link to this section</span>
-      </a>
 Functions
+      </a>
     </h1>
     <div class="functions-list">
-<section class="detail" id="all_props_breakdown/2">
+<section class="detail" id="all_custom_prop_values/2">
 
   <div class="detail-header">
-    <a href="#all_props_breakdown/2" class="detail-link" title="Link to this function">
+    <a href="#all_custom_prop_values/2" class="detail-link" title="Link to this function">
       <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature" translate="no">all_props_breakdown(conn, params)</h1>
+    <h1 class="signature" translate="no">all_custom_prop_values(conn, params)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/api/stats_controller.ex#L1120" class="icon-action" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/api/stats_controller.ex#L1214" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -374,7 +388,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">browser_versions(conn, params)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/api/stats_controller.ex#L951" class="icon-action" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/api/stats_controller.ex#L1057" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -396,7 +410,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">browsers(conn, params)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/api/stats_controller.ex#L927" class="icon-action" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/api/stats_controller.ex#L1033" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -418,7 +432,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">cities(conn, params)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/api/stats_controller.ex#L889" class="icon-action" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/api/stats_controller.ex#L995" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -440,7 +454,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">conversions(conn, params)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/api/stats_controller.ex#L1035" class="icon-action" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/api/stats_controller.ex#L1141" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -462,7 +476,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">countries(conn, params)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/api/stats_controller.ex#L804" class="icon-action" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/api/stats_controller.ex#L910" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -484,7 +498,29 @@ Functions
     </a>
     <h1 class="signature" translate="no">current_visitors(conn, _)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/api/stats_controller.ex#L1137" class="icon-action" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/api/stats_controller.ex#L1275" class="icon-action" rel="help" title="View Source">
+       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="custom_prop_values/2">
+
+  <div class="detail-header">
+    <a href="#custom_prop_values/2" class="detail-link" title="Link to this function">
+      <i class="ri-link-m" aria-hidden="true"></i>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature" translate="no">custom_prop_values(conn, params)</h1>
+
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/api/stats_controller.ex#L1208" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -506,7 +542,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">entry_pages(conn, params)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/api/stats_controller.ex#L721" class="icon-action" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/api/stats_controller.ex#L819" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -528,7 +564,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">exit_pages(conn, params)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/api/stats_controller.ex#L749" class="icon-action" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/api/stats_controller.ex#L850" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -550,7 +586,29 @@ Functions
     </a>
     <h1 class="signature" translate="no">filter_suggestions(conn, params)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/api/stats_controller.ex#L1148" class="icon-action" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/api/stats_controller.ex#L1286" class="icon-action" rel="help" title="View Source">
+       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="funnel/2">
+
+  <div class="detail-header">
+    <a href="#funnel/2" class="detail-link" title="Link to this function">
+      <i class="ri-link-m" aria-hidden="true"></i>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature" translate="no">funnel(conn, params)</h1>
+
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/api/stats_controller.ex#L515" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -583,10 +641,10 @@ Functions
   <section class="docstring">
 
 <p>Returns a time-series based on given parameters.</p><h2 id="main_graph/2-parameters" class="section-heading">
-  <a href="#main_graph/2-parameters" class="hover-link"><i class="ri-link-m" aria-hidden="true"></i>
-  <p class="sr-only">parameters</p>
+  <a href="#main_graph/2-parameters">
+    <i class="ri-link-m" aria-hidden="true"></i>
+    Parameters
   </a>
-  Parameters
 </h2>
 <p>This API accepts the following parameters:</p><ul><li><p><code class="inline">period</code> - x-axis of the graph, e.g. <code class="inline">12mo</code>, <code class="inline">day</code>, <code class="inline">custom</code>.</p></li><li><p><code class="inline">metric</code> - y-axis of the graph, e.g. <code class="inline">visits</code>, <code class="inline">visitors</code>, <code class="inline">pageviews</code>.
 See the Stats API <a href="https://plausible.io/docs/stats-api#metrics">&quot;Metrics&quot;</a>
@@ -596,17 +654,17 @@ and <code class="inline">month</code>. The default depends on the <code class="i
 <code class="inline">Plausible.Query.from/2</code> for each default.</p></li><li><p><code class="inline">filters</code> - optional filters to drill down data. See the Stats API
 <a href="https://plausible.io/docs/stats-api#filtering">&quot;Filtering&quot;</a> section for
 more details.</p></li><li><p><code class="inline">with_imported</code> - boolean indicating whether to include Google Analytics
-imported data or not. Defaults to <code class="inline">false</code>.</p></li></ul><p>Full example:</p><pre><code class="makeup elixir" translate="no"><span class="p" data-group-id="9130421750-1">%{</span><span class="w">
+imported data or not. Defaults to <code class="inline">false</code>.</p></li></ul><p>Full example:</p><pre><code class="makeup elixir" translate="no"><span class="p" data-group-id="0283370783-1">%{</span><span class="w">
   </span><span class="s">&quot;from&quot;</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="s">&quot;2021-09-06&quot;</span><span class="p">,</span><span class="w">
   </span><span class="s">&quot;interval&quot;</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="s">&quot;month&quot;</span><span class="p">,</span><span class="w">
   </span><span class="s">&quot;metric&quot;</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="s">&quot;visitors&quot;</span><span class="p">,</span><span class="w">
   </span><span class="s">&quot;period&quot;</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="s">&quot;custom&quot;</span><span class="p">,</span><span class="w">
   </span><span class="s">&quot;to&quot;</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="s">&quot;2021-12-13&quot;</span><span class="w">
-</span><span class="p" data-group-id="9130421750-1">}</span></code></pre><h2 id="main_graph/2-response" class="section-heading">
-  <a href="#main_graph/2-response" class="hover-link"><i class="ri-link-m" aria-hidden="true"></i>
-  <p class="sr-only">response</p>
+</span><span class="p" data-group-id="0283370783-1">}</span></code></pre><h2 id="main_graph/2-response" class="section-heading">
+  <a href="#main_graph/2-response">
+    <i class="ri-link-m" aria-hidden="true"></i>
+    Response
   </a>
-  Response
 </h2>
 <p>Returns a map with the following keys:</p><ul><li><p><code class="inline">plot</code> - list of values for the requested metric representing the y-axis
 of the graph.</p></li><li><p><code class="inline">labels</code> - list of date times representing the x-axis of the graph.</p></li><li><p><code class="inline">present_index</code> - index of the element representing the current date in
@@ -617,20 +675,20 @@ cut off by the requested date range or not. For example, if looking at a
 month week-by-week, some weeks may be cut off by the month boundaries.
 It's useful to adjust the graph display slightly in case the interval is
 not 'full' so that the user understands why the numbers might be lower for
-those partial periods.</p></li></ul><p>Full example:</p><pre><code class="makeup elixir" translate="no"><span class="p" data-group-id="9424915914-1">%{</span><span class="w">
-  </span><span class="s">&quot;full_intervals&quot;</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p" data-group-id="9424915914-2">%{</span><span class="w">
+those partial periods.</p></li></ul><p>Full example:</p><pre><code class="makeup elixir" translate="no"><span class="p" data-group-id="7402150353-1">%{</span><span class="w">
+  </span><span class="s">&quot;full_intervals&quot;</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p" data-group-id="7402150353-2">%{</span><span class="w">
     </span><span class="s">&quot;2021-09-01&quot;</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="no">false</span><span class="p">,</span><span class="w">
     </span><span class="s">&quot;2021-10-01&quot;</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="no">true</span><span class="p">,</span><span class="w">
     </span><span class="s">&quot;2021-11-01&quot;</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="no">true</span><span class="p">,</span><span class="w">
     </span><span class="s">&quot;2021-12-01&quot;</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="no">false</span><span class="w">
-  </span><span class="p" data-group-id="9424915914-2">}</span><span class="p">,</span><span class="w">
+  </span><span class="p" data-group-id="7402150353-2">}</span><span class="p">,</span><span class="w">
   </span><span class="s">&quot;imported_source&quot;</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="no">nil</span><span class="p">,</span><span class="w">
   </span><span class="s">&quot;interval&quot;</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="s">&quot;month&quot;</span><span class="p">,</span><span class="w">
-  </span><span class="s">&quot;labels&quot;</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p" data-group-id="9424915914-3">[</span><span class="s">&quot;2021-09-01&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;2021-10-01&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;2021-11-01&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;2021-12-01&quot;</span><span class="p" data-group-id="9424915914-3">]</span><span class="p">,</span><span class="w">
-  </span><span class="s">&quot;plot&quot;</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p" data-group-id="9424915914-4">[</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p" data-group-id="9424915914-4">]</span><span class="p">,</span><span class="w">
+  </span><span class="s">&quot;labels&quot;</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p" data-group-id="7402150353-3">[</span><span class="s">&quot;2021-09-01&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;2021-10-01&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;2021-11-01&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;2021-12-01&quot;</span><span class="p" data-group-id="7402150353-3">]</span><span class="p">,</span><span class="w">
+  </span><span class="s">&quot;plot&quot;</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p" data-group-id="7402150353-4">[</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p" data-group-id="7402150353-4">]</span><span class="p">,</span><span class="w">
   </span><span class="s">&quot;present_index&quot;</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="no">nil</span><span class="p">,</span><span class="w">
   </span><span class="s">&quot;with_imported&quot;</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="no">false</span><span class="w">
-</span><span class="p" data-group-id="9424915914-1">}</span></code></pre>
+</span><span class="p" data-group-id="7402150353-1">}</span></code></pre>
   </section>
 </section>
 <section class="detail" id="operating_system_versions/2">
@@ -642,7 +700,7 @@ those partial periods.</p></li></ul><p>Full example:</p><pre><code class="makeup
     </a>
     <h1 class="signature" translate="no">operating_system_versions(conn, params)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/api/stats_controller.ex#L989" class="icon-action" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/api/stats_controller.ex#L1095" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -664,7 +722,7 @@ those partial periods.</p></li></ul><p>Full example:</p><pre><code class="makeup
     </a>
     <h1 class="signature" translate="no">operating_systems(conn, params)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/api/stats_controller.ex#L965" class="icon-action" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/api/stats_controller.ex#L1071" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -686,29 +744,7 @@ those partial periods.</p></li></ul><p>Full example:</p><pre><code class="makeup
     </a>
     <h1 class="signature" translate="no">pages(conn, params)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/api/stats_controller.ex#L692" class="icon-action" rel="help" title="View Source">
-       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
-       <span class="sr-only">View Source</span>
-     </a>
-
-
-  </div>
-
-  <section class="docstring">
-
-
-  </section>
-</section>
-<section class="detail" id="prop_breakdown/2">
-
-  <div class="detail-header">
-    <a href="#prop_breakdown/2" class="detail-link" title="Link to this function">
-      <i class="ri-link-m" aria-hidden="true"></i>
-      <span class="sr-only">Link to this function</span>
-    </a>
-    <h1 class="signature" translate="no">prop_breakdown(conn, params)</h1>
-
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/api/stats_controller.ex#L1087" class="icon-action" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/api/stats_controller.ex#L790" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -730,7 +766,29 @@ those partial periods.</p></li></ul><p>Full example:</p><pre><code class="makeup
     </a>
     <h1 class="signature" translate="no">referrer_drilldown(conn, params)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/api/stats_controller.ex#L633" class="icon-action" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/api/stats_controller.ex#L733" class="icon-action" rel="help" title="View Source">
+       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="referrers/2">
+
+  <div class="detail-header">
+    <a href="#referrers/2" class="detail-link" title="Link to this function">
+      <i class="ri-link-m" aria-hidden="true"></i>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature" translate="no">referrers(conn, params)</h1>
+
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/api/stats_controller.ex#L704" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -752,7 +810,7 @@ those partial periods.</p></li></ul><p>Full example:</p><pre><code class="makeup
     </a>
     <h1 class="signature" translate="no">regions(conn, params)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/api/stats_controller.ex#L856" class="icon-action" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/api/stats_controller.ex#L962" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -774,7 +832,7 @@ those partial periods.</p></li></ul><p>Full example:</p><pre><code class="makeup
     </a>
     <h1 class="signature" translate="no">screen_sizes(conn, params)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/api/stats_controller.ex#L1003" class="icon-action" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/api/stats_controller.ex#L1109" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -796,7 +854,7 @@ those partial periods.</p></li></ul><p>Full example:</p><pre><code class="makeup
     </a>
     <h1 class="signature" translate="no">sources(conn, params)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/api/stats_controller.ex#L460" class="icon-action" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/api/stats_controller.ex#L485" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -818,7 +876,7 @@ those partial periods.</p></li></ul><p>Full example:</p><pre><code class="makeup
     </a>
     <h1 class="signature" translate="no">top_stats(conn, params)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/api/stats_controller.ex#L193" class="icon-action" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/api/stats_controller.ex#L199" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -840,7 +898,7 @@ those partial periods.</p></li></ul><p>Full example:</p><pre><code class="makeup
     </a>
     <h1 class="signature" translate="no">utm_campaigns(conn, params)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/api/stats_controller.ex#L519" class="icon-action" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/api/stats_controller.ex#L590" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -862,7 +920,7 @@ those partial periods.</p></li></ul><p>Full example:</p><pre><code class="makeup
     </a>
     <h1 class="signature" translate="no">utm_contents(conn, params)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/api/stats_controller.ex#L548" class="icon-action" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/api/stats_controller.ex#L619" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -884,7 +942,7 @@ those partial periods.</p></li></ul><p>Full example:</p><pre><code class="makeup
     </a>
     <h1 class="signature" translate="no">utm_mediums(conn, params)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/api/stats_controller.ex#L490" class="icon-action" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/api/stats_controller.ex#L561" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -906,7 +964,7 @@ those partial periods.</p></li></ul><p>Full example:</p><pre><code class="makeup
     </a>
     <h1 class="signature" translate="no">utm_sources(conn, params)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/api/stats_controller.ex#L604" class="icon-action" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/api/stats_controller.ex#L675" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -928,7 +986,7 @@ those partial periods.</p></li></ul><p>Full example:</p><pre><code class="makeup
     </a>
     <h1 class="signature" translate="no">utm_terms(conn, params)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/api/stats_controller.ex#L576" class="icon-action" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/api/stats_controller.ex#L647" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -962,7 +1020,7 @@ those partial periods.</p></li></ul><p>Full example:</p><pre><code class="makeup
 
         <p class="built-using">
           Built using
-          <a href="https://github.com/elixir-lang/ex_doc" title="ExDoc" target="_blank" rel="help noopener" translate="no">ExDoc</a> (v0.29.4) for the
+          <a href="https://github.com/elixir-lang/ex_doc" title="ExDoc" target="_blank" rel="help noopener" translate="no">ExDoc</a> (v0.30.3) for the
 
             <a href="https://elixir-lang.org" title="Elixir" target="_blank" translate="no">Elixir programming language</a>
 
